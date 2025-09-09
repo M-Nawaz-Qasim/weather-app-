@@ -5,10 +5,10 @@ interface Weather {
         country: string;
     }
     list: {
-        dt_txt: null;
+        dt_txt: string;
         main: {
             temp: number;
-            presure: number;
+            pressure: number;
             description: string;
             feels_like: number;
         }
@@ -70,7 +70,7 @@ function Fetch() {
                         </div>
                         <p className='px-10 text-2xl pb-4'>{Data.list[0].weather[0].description}</p>
                         <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-2 overflow-auto px-3">
-                            {Data.list.slice(0, 12)  .map((e, index) => (
+                            {Data.list.slice(0, 12).map((e, index) => (
                                 <>
                                     <div className="flex flex-col items-center bg-gray-400 rounded-2xl px-2" key={index}>
                                         <img src={`http://openweathermap.org/img/wn/${e.weather[0].icon}@2x.png`} alt="weather icon" />

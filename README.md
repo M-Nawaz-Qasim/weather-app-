@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # weather-app-using-react-tailwind-weather-api
 The weather app using React (vite) Tailwindcss typeScript js. This project is for API calling practice and building a my own plateform to check weather.
 =======
@@ -72,3 +73,6 @@ export default tseslint.config([
 ])
 ```
 >>>>>>> 8eb43ab (Weather app first commit)
+=======
+# weather-app-
+>>>>>>> 34a2b4a458562b6119648eb0ffc7452eccb20dac
